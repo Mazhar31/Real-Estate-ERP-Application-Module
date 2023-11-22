@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="estate_menu_root"
+              name="Real Estate"
+              sequence="10"/>
+    <menuitem id="estate_menu_advertisement"
+              parent="estate_menu_root"
+              name="Advertisement"
+              sequence="10"/>
+    <menuitem id="estate_menu_settings"
+              parent="estate_menu_root"
+              name="Settings"/>
+    <menuitem id="estate_menu_properties"
+              parent="estate_menu_advertisement"
+              name="Properties"
+              action="estate_property_action"
+              sequence="10"/>
+
+    <menuitem id="estate_menu_propertyTypes"
+              parent="estate_menu_settings"
+              name="Property Types"
+              action="estate_property_type_action"/>
+</odoo>
